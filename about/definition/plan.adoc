@@ -9,7 +9,7 @@ Stevan Vlajic
 
 //toc::[]
 
-image::{docdir}/../img/e1ace97b-f36f-42e6-8aa0-6c6ffb09f8c5.jpg[]
+image::img/e1ace97b-f36f-42e6-8aa0-6c6ffb09f8c5.jpg[]
 
 == Was ist Dropshipping
 Dropshipping wird manchmal auch Streckengeschäft oder Direktversand genannt und ist eine Methode des Onlinehandels, bei der ein Geschäft die Produkte, die es verkauft, nicht selbst auf Lager hat.
