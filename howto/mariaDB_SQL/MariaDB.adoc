@@ -33,6 +33,11 @@ Stevan Vlajic
 === Enter MariaDB-Monitor
 `sudo mysql`
 
+== Delete MYSQL and MariaDB
+`sudo apt-get remove --purge mysql\*`
+
+`sudo apt-get remove --purge mariadb\*`
+
 === Exit MariaDB-Monitor
 `exit`
 
