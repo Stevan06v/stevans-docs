@@ -12,13 +12,13 @@ Stevan Vlajic
 == Aufbau
 image::img/git.png[]
 
-== Commands
+== Basic-Commands
 
 * **git clone https://github.com/Stevan06v/webstore.git**
-Repository von GitHub wird auf eigenen Rechner "geklont".
+Repository vom Git-Server wird auf eigenen Rechner "geklont".
 
 * *git pull*
-** Neuste Änderungen werden von GIT-HUB geholt
+** Neuste Änderungen werden vom GIT-Serb´ver geholt
 
 * *git add file.adoc*
 ** Änderungen werden in die Staging Area(Lokal hinzugefügt)
@@ -29,4 +29,16 @@ Repository von GitHub wird auf eigenen Rechner "geklont".
 
 * *git push*
 ** Das Lacal-Repo wird auf den GitHUB-Server geschreieben
-** Zu sehen ist das ganze in GitHub selbst unter dem repo: "muster-repo"
+** Zu sehen ist das ganze im GitHub selbst unter dem repo: "muster-repo"
+
+* *git checkout*
+** Auf welchem branch definde ich mich
+
+* *git checkout -b dev*
+** Branch wird erstellt
+
+* *git merge*
+** Zwei branches werden zusammengefügt
+
+== Branches
+image::https://uploads.sitepoint.com/wp-content/uploads/2019/06/155993572204-gitflow.png[]

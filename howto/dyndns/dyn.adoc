@@ -1,0 +1,37 @@
+= DynDNS and DOMAIN
+Stevan Vlajic
+1.0.0, {docdate}: MySQL & Maria-DB
+//:toc-placement!: // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:  // Nummerierung der Überschriften / section numbering
+:toc: left
+
+//toc::[]
+
+== Installation
+`sudo apt-get install ddclient`
+
+`sudo apt-get update && sudo apt full-upgrade -y && sudo reboot`
+
+== Create a DynDNS
+https://my.noip.com/dynamic-dns
+
+== Configuration with no ip service
+`sudo nano /etc/ddclient.conf`
+
+**Paste the following: **
+
+* protocol=noip
+* use=web
+* web=checkip.dyndns.org
+* server=dynupdate.no-ip.com
+* login=username
+* password='password'
+* stevan.ddns.net
+
+== Restart DynDNS
+`sudo /etc/init.d/ddclient restart`
+
+== Request DynDNS
+`sudo ddclient -daemon=0 -debug -verbose -noquiet`
