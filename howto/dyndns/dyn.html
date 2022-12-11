@@ -450,18 +450,30 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_installation">1. Installation</a></li>
-<li><a href="#_create_a_dyndns">2. Create a DynDNS</a></li>
-<li><a href="#_configuration_with_no_ip_service">3. Configuration with no ip service</a></li>
-<li><a href="#_restart_dyndns">4. Restart DynDNS</a></li>
-<li><a href="#_request_dyndns">5. Request DynDNS</a></li>
+<li><a href="#_dyndns">1. DynDNS</a>
+<ul class="sectlevel2">
+<li><a href="#_installation">1.1. Installation</a></li>
+<li><a href="#_create_a_dyndns">1.2. Create a DynDNS</a></li>
+<li><a href="#_configuration_with_no_ip_service">1.3. Configuration with no ip service</a></li>
+<li><a href="#_restart_dyndns">1.4. Restart DynDNS</a></li>
+<li><a href="#_request_dyndns_test">1.5. Request DynDNS --Test</a></li>
+</ul>
+</li>
+<li><a href="#_owned_domain">2. Owned domain</a>
+<ul class="sectlevel2">
+<li><a href="#_buy_it_on">2.1. Buy it on:</a></li>
+<li><a href="#_configuration_with_strato">2.2. Configuration with STRATO</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_installation">1. Installation</h2>
+<h2 id="_dyndns">1. DynDNS</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_installation">1.1. Installation</h3>
 <div class="paragraph">
 <p><code>sudo apt-get install ddclient</code></p>
 </div>
@@ -469,18 +481,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><code>sudo apt-get update &amp;&amp; sudo apt full-upgrade -y &amp;&amp; sudo reboot</code></p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_create_a_dyndns">2. Create a DynDNS</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_create_a_dyndns">1.2. Create a DynDNS</h3>
 <div class="paragraph">
 <p><a href="https://my.noip.com/dynamic-dns" class="bare">https://my.noip.com/dynamic-dns</a></p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_configuration_with_no_ip_service">3. Configuration with no ip service</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_configuration_with_no_ip_service">1.3. Configuration with no ip service</h3>
 <div class="paragraph">
 <p><code>sudo nano /etc/ddclient.conf</code></p>
 </div>
@@ -513,20 +521,60 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_restart_dyndns">4. Restart DynDNS</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_restart_dyndns">1.4. Restart DynDNS</h3>
 <div class="paragraph">
 <p><code>sudo /etc/init.d/ddclient restart</code></p>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_request_dyndns">5. Request DynDNS</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_dyndns_test">1.5. Request DynDNS --Test</h3>
 <div class="paragraph">
 <p><code>sudo ddclient -daemon=0 -debug -verbose -noquiet</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_owned_domain">2. Owned domain</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Example with Strato</p>
+</div>
+<div class="sect2">
+<h3 id="_buy_it_on">2.1. Buy it on:</h3>
+<div class="paragraph">
+<p><a href="https://www.strato.de/buy/ger/domain" class="bare">https://www.strato.de/buy/ger/domain</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_with_strato">2.2. Configuration with STRATO</h3>
+<div class="paragraph">
+<p><code>sudo nano /etc/ddclient.conf</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Paste the following: </strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>protocol=dyndns2</p>
+</li>
+<li>
+<p>use=web</p>
+</li>
+<li>
+<p>server=dyndns.strato.com</p>
+</li>
+<li>
+<p>login=example.de</p>
+</li>
+<li>
+<p>password='password'
+example.com</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -534,7 +582,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2022-12-11 02:25:24 +0100
+Last updated 2022-12-11 02:41:26 +0100
 </div>
 </div>
 </body>

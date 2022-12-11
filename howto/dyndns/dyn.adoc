@@ -9,15 +9,17 @@ Stevan Vlajic
 
 //toc::[]
 
-== Installation
+== DynDNS
+
+=== Installation
 `sudo apt-get install ddclient`
 
 `sudo apt-get update && sudo apt full-upgrade -y && sudo reboot`
 
-== Create a DynDNS
+=== Create a DynDNS
 https://my.noip.com/dynamic-dns
 
-== Configuration with no ip service
+=== Configuration with no ip service
 `sudo nano /etc/ddclient.conf`
 
 **Paste the following: **
@@ -30,8 +32,30 @@ https://my.noip.com/dynamic-dns
 * password='password'
 * stevan.ddns.net
 
-== Restart DynDNS
+=== Restart DynDNS
 `sudo /etc/init.d/ddclient restart`
 
-== Request DynDNS
+=== Request DynDNS --Test
 `sudo ddclient -daemon=0 -debug -verbose -noquiet`
+
+
+== Owned domain
+Example with Strato
+
+=== Buy it on:
+https://www.strato.de/buy/ger/domain
+
+=== Configuration with STRATO
+`sudo nano /etc/ddclient.conf`
+
+**Paste the following: **
+
+// * pid=/var/run/ddclient.pid
+* protocol=dyndns2
+* use=web
+* server=dyndns.strato.com
+* login=example.de
+* password='password'
+example.com
+
+
