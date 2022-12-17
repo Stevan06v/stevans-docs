@@ -15,7 +15,6 @@ Stevan Vlajic
 image::./img/Bytecode.png[]
 
 == Java Compiler
-* How to run the Java-Compiler
 ** `javac ./src/Helloworld.java`
 
 * Purpose of the Java-Compiler
@@ -161,3 +160,24 @@ Mave stores the installes artefacts(libraries) into its created repository.
 
 * Directory
 ** `~/.m2/repository`
+
+
+=== Installation 
+
+==== Download the Maven Binaries
+
+`$ wget https://mirrors.estointernet.in/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz`
+
+`$ tar -xvf apache-maven-3.6.3-bin.tar.gz`
+
+`$ mv apache-maven-3.6.3 /opt/`
+
+==== Setting M2_HOME and Path Variables
+
+`M2_HOME='/opt/apache-maven-3.6.3'`
+`PATH="$M2_HOME/bin:$PATH"`
+`export PATH`
+
+
+==== Verify the Maven installation
+`$ mvn -version`
