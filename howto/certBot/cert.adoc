@@ -1,0 +1,41 @@
+= CERT-Bot
+Stevan Vlajic
+1.0.0, {docdate}: MySQL & Maria-DB
+//:toc-placement!: // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:  // Nummerierung der Überschriften / section numbering
+:toc: left
+
+//toc::[]
+
+== About 
+Certbot is a free, open source software tool for automatically using Let's Encrypt certificates on manually-administrated websites to enable HTTPS.
+
+== How tom install
+
+* Installation with apache 
+
+`sudo apt-get install certbot python3-certbot-apache apache2`
+
+* Installation with nginx 
+
+`sudo apt-get install certbot python3-certbot-nginx nginx`
+
+== Test CERT-Bot
+
+`sudo certbot --help`
+
+
+== How to obtain a certificate
+
+`sudo certbot --apache`
+
+* Enter your EMAIL-Adress
+* `~ A` -> Accept license agreement
+* Y -> Get Emails 
+* Y 
+* Your Domainname 
+** example: `rabbidlydb.ddns.net`
+
+
