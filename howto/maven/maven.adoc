@@ -164,7 +164,19 @@ Mave stores the installes artefacts(libraries) into its created repository.
 
 === Installation 
 
-==== Download the Maven Binaries
+==== JDK
+
+* `sudo apt update && sudo apt upgrade -y`
+* `sudo add-apt-repository ppa:linuxuprising/java -y`
+* `sudo apt update`
+* `sudo apt-get install oracle-java17-installer oracle-java17-set-default`
+
+* `java -version`
+
+
+==== MAVEN
+
+===== Download the Maven Binaries
 
 `$ wget https://mirrors.estointernet.in/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz`
 
@@ -172,12 +184,14 @@ Mave stores the installes artefacts(libraries) into its created repository.
 
 `$ mv apache-maven-3.6.3 /opt/`
 
-==== Setting M2_HOME and Path Variables
+===== Setting M2_HOME and Path Variables
+
+`nano .bashrc`
 
 `M2_HOME='/opt/apache-maven-3.6.3'`
 `PATH="$M2_HOME/bin:$PATH"`
 `export PATH`
 
 
-==== Verify the Maven installation
+===== Verify the Maven installation
 `$ mvn -version`
