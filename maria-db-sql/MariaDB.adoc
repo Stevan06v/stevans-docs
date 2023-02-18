@@ -33,7 +33,7 @@ Stevan Vlajic
 === Enter MariaDB-Monitor
 `sudo mysql`
 
-== Delete MYSQL and MariaDB
+=== Delete MYSQL and MariaDB
 `sudo apt-get remove --purge mysql\*`
 
 `sudo apt-get remove --purge mariadb\*`
@@ -50,9 +50,9 @@ Stevan Vlajic
 `CREATE USER IF NOT EXISTS 'user'@'localhost' IDENTIFIED BY 'password';`
 
 === User grants
-`GRANT ALL PRIVILEGES ON *.* TO 'username'@'%' WITH GRANT OPTION;`
+`GRANT ALL PRIVILEGES ON * . * TO 'username'@'%' WITH GRANT OPTION;`
 
-`GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' WITH GRANT OPTION;`
+`GRANT ALL PRIVILEGES ON * . * TO 'username'@'localhost' WITH GRANT OPTION;`
 
 === Delete user
 `DROP USER 'username'@'%';`
