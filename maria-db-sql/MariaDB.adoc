@@ -16,6 +16,10 @@ Stevan Vlajic
 
 `-y,-y,-y,-y...`
 
+== Open Maria-DB-PORT
+* `sudo iptables -I INPUT -p tcp -m tcp --dport 3306 -j ACCEPT`
+
+
 == How to configure
 === Make it accessable from everywhere
 `sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf`
