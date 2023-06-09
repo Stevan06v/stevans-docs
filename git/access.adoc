@@ -18,7 +18,7 @@ image::img/git.png[]
 Repository vom Git-Server wird auf eigenen Rechner "geklont".
 
 * *git pull*
-** Neuste Änderungen werden vom GIT-Serb´ver geholt
+** Neuste Änderungen werden vom GIT-Server geholt
 
 * *git add file.adoc*
 ** Änderungen werden in die Staging Area(Lokal hinzugefügt)
