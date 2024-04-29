@@ -11,7 +11,7 @@ Stevan Vlajic
 
 == How to install
 
-* `sudo apt install tor``
+* `sudo apt install tor`
 
 == Configure
 * `sudo nano /etc/tor/torrc`
